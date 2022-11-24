@@ -3,7 +3,7 @@ package Model;
 public class Jogador {
     private Deck deck;
     private int vida;
-    private Campo campo;
+    private Campo campoVersus;
 
     public Deck getDeck() {
         return deck;
@@ -26,17 +26,17 @@ public class Jogador {
     }
 
     public Campo getCampo() {
-        return campo;
+        return campoVersus;
     }
 
-    public void setCampo(Campo campo) {
-        this.campo = campo;
+    public void setCampo(Campo campoVersus) {
+        this.campoVersus = campoVersus;
     }
 
-    public Jogador(Deck deck, int vida, Campo campo) {
+    public Jogador(Deck deck, int vida, Campo campoVersus) {
         this.deck = deck;
         this.vida = vida;
-        this.campo = campo;
+        this.campoVersus = campoVersus;
     }
 
 
